@@ -1,0 +1,2 @@
+C:\Users\twine\OneDrive\Desktop\Unity Projects and Tutorials\Grim's Eye\obj\Debug\Assembly-CSharp.csprojAssemblyReference.cache
+C:\Users\twine\OneDrive\Desktop\Unity Projects and Tutorials\Grim's Eye\obj\Debug\Assembly-CSharp.csproj.CoreCompileInputs.cache

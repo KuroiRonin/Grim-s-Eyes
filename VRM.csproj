@@ -188,10 +188,10 @@
     <None Include="Assets\VRM\UniGLTF\Resources\Shaders\StandardVColor.shader" />
     <None Include="Assets\VRM\UniVRM\Resources\Shaders\VRMUnlitTransparent.shader" />
     <Reference Include="UnityEditor.UI">
-      <HintPath>C:/Users/twine/OneDrive/Desktop/Grim's Eye/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
+      <HintPath>C:/Users/twine/OneDrive/Desktop/Unity Projects and Tutorials/Grim's Eye/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.UI">
-      <HintPath>C:/Users/twine/OneDrive/Desktop/Grim's Eye/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
+      <HintPath>C:/Users/twine/OneDrive/Desktop/Unity Projects and Tutorials/Grim's Eye/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.AIModule">
       <HintPath>C:/Program Files/Unity/Editor/2019.3.0f6/Editor/Data/Managed/UnityEngine/UnityEngine.AIModule.dll</HintPath>

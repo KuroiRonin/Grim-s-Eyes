@@ -9,7 +9,7 @@ public class CharacterInventory : MonoBehaviour
     #region Variable Declarations
     public static CharacterInventory instance;
 
-    public CharacterStats charStats;
+  
     GameObject foundStats;
 
     public Image[] hotBarDisplayHolders = new Image[4];
@@ -28,13 +28,13 @@ public class CharacterInventory : MonoBehaviour
     void Start()
     {
         instance = this;
-        itemEntry = new InventoryEntry(0, null, null);
+        itemEntry = new InventoryEntry(0, null, null, true);
         itemsInInventory.Clear();
 
         inventoryDisplaySlots = InventoryDisplayHolder.GetComponentsInChildren<Image>();
 
         foundStats = GameObject.FindGameObjectWithTag("Player");
-        charStats = foundStats.GetComponent<CharacterStats>();
+       
     }
     #endregion
 
@@ -74,16 +74,11 @@ public class CharacterInventory : MonoBehaviour
     public void StoreItem(ItemPickUp itemToStore)
     {
         addedItem = false;
+        itemEntry.invEntry = itemToStore;
+        itemEntry.stackSize = 1;
+        itemEntry.hbSprite = itemToStore.itemDefinition.itemIcon;
+        itemToStore.gameObject.SetActive(false);
 
-        if ((charStats.characterDefinition.currentEncumbrance + itemToStore.itemDefinition.itemWeight) <= charStats.characterDefinition.maxEncumbrance)
-        {
-            itemEntry.invEntry = itemToStore;
-            itemEntry.stackSize = 1;
-            itemEntry.hbSprite = itemToStore.itemDefinition.itemIcon;
-
-            //addedItem = false;
-            itemToStore.gameObject.SetActive(false);
-        }
     }
 
     void TryPickUp()
@@ -113,7 +108,7 @@ public class CharacterInventory : MonoBehaviour
                             ie.Value.stackSize += 1;
                             AddItemToHotBar(ie.Value);
                             itsInInv = true;
-                            DestroyObject(itemEntry.invEntry.gameObject);
+                            Destroy(itemEntry.invEntry.gameObject);
                             break;
                         }
                         //If item does not exist already in inventory then continue here
@@ -148,9 +143,9 @@ public class CharacterInventory : MonoBehaviour
 
     bool AddItemToInv(bool finishedAdding)
     {
-        itemsInInventory.Add(idCount, new InventoryEntry(itemEntry.stackSize, Instantiate(itemEntry.invEntry), itemEntry.hbSprite));
+        itemsInInventory.Add(idCount, new InventoryEntry(itemEntry.stackSize, Instantiate(itemEntry.invEntry), itemEntry.hbSprite, itemEntry.isStackable));
 
-        DestroyObject(itemEntry.invEntry.gameObject);
+        Destroy(itemEntry.invEntry.gameObject);
 
         FillInventoryDisplay();
         AddItemToHotBar(itemsInInventory[idCount]);

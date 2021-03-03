@@ -5,12 +5,15 @@ using UnityEngine;
 
 public class ItemPickUp : MonoBehaviour
 {
-    public ItemPickUps_SO itemDefinition;
+    public ItemPickUp itemDefinition;
+    public Sprite itemIcon;
 
-    public CharacterStats charStats;
+
     CharacterInventory charInventory;
 
     GameObject foundStats;
+    internal bool isStackable;
+    internal bool isIndestructable;
 
     #region Constructors
     public ItemPickUp()
@@ -22,7 +25,7 @@ public class ItemPickUp : MonoBehaviour
     void Start()
     {
         foundStats = GameObject.FindGameObjectWithTag("Player");
-        charStats = foundStats.GetComponent<CharacterStats>();
+    
     }
 
     void StoreItem()
@@ -32,32 +35,20 @@ public class ItemPickUp : MonoBehaviour
 
     public void UseItem()
     {
-        switch (itemDefinition.itemType)
-        {
-            case ItemTypeDefinitions.HEALTH:
-                charStats.ApplyHealth(itemDefinition.itemAmount);
-                Debug.Log(charStats.GetHealth());
-                break;
-            case ItemTypeDefinitions.MANA:
-                charStats.ApplyMana(itemDefinition.itemAmount);
-                break;
-            case ItemTypeDefinitions.WEALTH:
-                charStats.GiveWealth(itemDefinition.itemAmount);
-                break;
-            case ItemTypeDefinitions.WEAPON:
-                charStats.ChangeWeapon(this);
-                break;
-            case ItemTypeDefinitions.ARMOR:
-                charStats.ChangeArmor(this);
-                break;
-        }
+        
+    }
+
+    public bool isStorable()
+    {
+
+        return true;
     }
 
     private void OnTriggerEnter(Collider other)
     {
         if (other.tag == "Player")
         {
-            if (itemDefinition.isStorable)
+            if (itemDefinition.isStorable() )
             {
                 StoreItem();
             }

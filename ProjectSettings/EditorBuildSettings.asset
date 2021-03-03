@@ -9,6 +9,6 @@ EditorBuildSettings:
     path: Assets/Scenes/Main Menu.unity
     guid: 7453fbc2d8bd81a42982187c40e507a5
   - enabled: 1
-    path: Assets/Scenes/Test Scene.unity
-    guid: 9fc0d4010bbf28b4594072e72b8655ab
+    path: Assets/Scenes/Grim Eye's final scene.unity
+    guid: 78434e0af7be0dd45ac03a61364be8cc
   m_configObjects: {}

@@ -64,7 +64,6 @@
   <ItemGroup>
     <Compile Include="Assets\Inventory\CharacterInventory.cs" />
     <Compile Include="Assets\Inventory\InventoryEntry.cs" />
-    <Compile Include="Assets\Inventory\ItemPickUps_SO.cs" />
     <Compile Include="Assets\Monobehaviours\ItemPickUp.cs" />
     <Compile Include="Assets\PMXExporter\MMDataIO\CloneUtil.cs" />
     <Compile Include="Assets\PMXExporter\MMDataIO\Pmx\IPmxData.cs" />
@@ -79,8 +78,10 @@
     <Compile Include="Assets\PMXExporter\PMXExporter.cs" />
     <Compile Include="Assets\PMXExporter\PMXExporterLite.cs" />
     <Compile Include="Assets\PMXExporter\Util\MeshUtil.cs" />
-    <Compile Include="Assets\Script\animationStateController.cs" />
     <Compile Include="Assets\Scripts\MainMenu.cs" />
+    <Compile Include="Assets\Scripts\Movement.cs" />
+    <Compile Include="Assets\Scripts\ToggleRenderer.cs" />
+    <Compile Include="Assets\Scripts\animationStateController.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark01.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark01_UGUI.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark02.cs" />
@@ -138,31 +139,31 @@
     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_Sprite.shader" />
     <None Include="Assets\TextMesh Pro\Examples &amp; Extras\Fonts\Bangers - OFL.txt" />
     <Reference Include="Unity.Timeline.Editor">
-      <HintPath>C:/Users/twine/OneDrive/Desktop/Grim's Eye/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
+      <HintPath>C:/Users/twine/OneDrive/Desktop/Unity Projects and Tutorials/Grim's Eye/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.VSCode.Editor">
-      <HintPath>C:/Users/twine/OneDrive/Desktop/Grim's Eye/Library/ScriptAssemblies/Unity.VSCode.Editor.dll</HintPath>
+      <HintPath>C:/Users/twine/OneDrive/Desktop/Unity Projects and Tutorials/Grim's Eye/Library/ScriptAssemblies/Unity.VSCode.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.TextMeshPro.Editor">
-      <HintPath>C:/Users/twine/OneDrive/Desktop/Grim's Eye/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
+      <HintPath>C:/Users/twine/OneDrive/Desktop/Unity Projects and Tutorials/Grim's Eye/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.UI">
-      <HintPath>C:/Users/twine/OneDrive/Desktop/Grim's Eye/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
+      <HintPath>C:/Users/twine/OneDrive/Desktop/Unity Projects and Tutorials/Grim's Eye/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Timeline">
-      <HintPath>C:/Users/twine/OneDrive/Desktop/Grim's Eye/Library/ScriptAssemblies/Unity.Timeline.dll</HintPath>
+      <HintPath>C:/Users/twine/OneDrive/Desktop/Unity Projects and Tutorials/Grim's Eye/Library/ScriptAssemblies/Unity.Timeline.dll</HintPath>
     </Reference>
     <Reference Include="Unity.CollabProxy.Editor">
-      <HintPath>C:/Users/twine/OneDrive/Desktop/Grim's Eye/Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll</HintPath>
+      <HintPath>C:/Users/twine/OneDrive/Desktop/Unity Projects and Tutorials/Grim's Eye/Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Rider.Editor">
-      <HintPath>C:/Users/twine/OneDrive/Desktop/Grim's Eye/Library/ScriptAssemblies/Unity.Rider.Editor.dll</HintPath>
+      <HintPath>C:/Users/twine/OneDrive/Desktop/Unity Projects and Tutorials/Grim's Eye/Library/ScriptAssemblies/Unity.Rider.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.TextMeshPro">
-      <HintPath>C:/Users/twine/OneDrive/Desktop/Grim's Eye/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
+      <HintPath>C:/Users/twine/OneDrive/Desktop/Unity Projects and Tutorials/Grim's Eye/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
     </Reference>
     <Reference Include="UnityEditor.UI">
-      <HintPath>C:/Users/twine/OneDrive/Desktop/Grim's Eye/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
+      <HintPath>C:/Users/twine/OneDrive/Desktop/Unity Projects and Tutorials/Grim's Eye/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.AIModule">
       <HintPath>C:/Program Files/Unity/Editor/2019.3.0f6/Editor/Data/Managed/UnityEngine/UnityEngine.AIModule.dll</HintPath>
